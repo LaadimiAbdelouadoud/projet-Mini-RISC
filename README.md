@@ -20,7 +20,7 @@ d'un processeur à travers l'implémentation du cycle fetch-decode-execute.
 
 FONCTIONNALITÉS INTÉGRÉES
 --------------------------
-✓ Jeu d'instructions RV32I complet (base RISC-V 32 bits)
++ Jeu d'instructions RV32I complet (base RISC-V 32 bits)
   - Arithmétique et logique (ADD, SUB, AND, OR, XOR, etc.)
   - Décalages (SLL, SRL, SRA)
   - Branchements conditionnels (BEQ, BNE, BLT, BGE, BLTU, BGEU)
@@ -29,33 +29,33 @@ FONCTIONNALITÉS INTÉGRÉES
   - Instructions immédiates (ADDI, ANDI, ORI, etc.)
   - Instructions upper immediate (LUI, AUIPC)
 
-✓ Extension RV32M (multiplication et division)
++ Extension RV32M (multiplication et division)
   - MUL, MULH, MULHSU, MULHU
   - DIV, DIVU, REM, REMU
 
-✓ 32 registres généraux (r0-r31, r0 câblé à 0)
++ 32 registres généraux (r0-r31, r0 câblé à 0)
 
-✓ Mémoire de 32 MiB (0x80000000 - 0x82000000)
++ Mémoire de 32 MiB (0x80000000 - 0x82000000)
 
-✓ Périphérique d'entrée/sortie CharOut (0x10000000)
++ Périphérique d'entrée/sortie CharOut (0x10000000)
   - Affichage de caractères
   - Affichage d'entiers signés
   - Affichage d'entiers en hexadécimal
   - Lecture de caractères (GETCHAR)
 
-✓ Vérification d'alignement et validation des adresses
++ Vérification d'alignement et validation des adresses
 
-✓ Extension de signe correcte pour toutes les instructions
++ Extension de signe correcte pour toutes les instructions
 
 
 CE QUI FONCTIONNE
 -----------------
-✓ Tous les opcodes RV32I et RV32M sont implémentés
-✓ Le cycle fetch-decode-execute fonctionne correctement
-✓ Les programmes de test (hello.s et factorial.s) s'exécutent avec succès
-✓ La gestion mémoire avec accès byte/half/word
-✓ Les entrées/sorties via le périphérique CharOut
-✓ La détection d'erreurs (adresses invalides, désalignement, etc.)
+- Tous les opcodes RV32I et RV32M sont implémentés
+- Le cycle fetch-decode-execute fonctionne correctement
+- Les programmes de test (hello.s et factorial.s) s'exécutent avec succès
+- La gestion mémoire avec accès byte/half/word
+- Les entrées/sorties via le périphérique CharOut
+- La détection d'erreurs (adresses invalides, désalignement, etc.)
 
 
 STRUCTURE DU PROJET
